@@ -1,7 +1,7 @@
 'use client'
 
 import { useState } from 'react'
-import { FiCheckCircle, FiClock, FiSmartphone, FiTruck, FiShield, FiBarChart2 } from 'react-icons/fi'
+import { FiCheckCircle, FiClock, FiSmartphone, FiTruck, FiShield, FiBarChart2, FiDollarSign, FiPieChart, FiTrendingUp, FiZap } from 'react-icons/fi'
 
 export default function FeaturesSection() {
   const [activeStep, setActiveStep] = useState(0)
@@ -10,57 +10,57 @@ export default function FeaturesSection() {
     {
       number: "01",
       icon: <FiSmartphone />,
-      title: "Sign Up & Order",
-      description: "Download our app or visit our website to place your first order in under 2 minutes.",
+      title: "Choose Your Plan",
+      description: "Select between Prepaid PAYG for households or Postpaid Smart-as-a-Service for businesses.",
       color: "from-blue-500 to-blue-600"
     },
     {
       number: "02",
       icon: <FiCheckCircle />,
-      title: "Get Smart Sensor",
-      description: "We install a free smart sensor on your gas cylinder to monitor levels 24/7.",
+      title: "IoT Meter Installation",
+      description: "We deploy Smart IoT meters with QR tagging for real-time consumption tracking.",
       color: "from-blue-600 to-blue-700"
     },
     {
       number: "03",
       icon: <FiBarChart2 />,
-      title: "Monitor Usage",
-      description: "Track your gas consumption in real-time through our mobile app.",
+      title: "App Setup & Credit",
+      description: "Download our app, load credit (Prepaid) or set up subscription (Postpaid), track usage.",
       color: "from-blue-700 to-blue-800"
     },
     {
       number: "04",
       icon: <FiTruck />,
-      title: "Automatic Delivery",
-      description: "We automatically schedule deliveries before you run out. No more guesswork!",
+      title: "Automated Supply",
+      description: "IoT meters proactively notify for dispatch ensuring continuous supply.",
       color: "from-blue-800 to-blue-900"
     }
   ]
 
   const features = [
     {
-      icon: <FiClock />,
-      title: "60-Minute Emergency",
-      description: "Emergency delivery within 60 minutes in covered areas",
-      stat: "24/7 Service"
+      icon: <FiDollarSign />,
+      title: "Prepaid PAYG",
+      description: "Micro-payments overcoming N10,000-25,000 lump-sum cost barrier",
+      stat: "Affordable"
     },
     {
-      icon: <FiShield />,
-      title: "Safety Certified",
-      description: "All our technicians are trained and certified for safe handling",
-      stat: "100% Safe"
+      icon: <FiPieChart />,
+      title: "Cost Control",
+      description: "Businesses track consumption per shift/batch for operational efficiency",
+      stat: "Efficient"
     },
     {
-      icon: <FiSmartphone />,
-      title: "Live Tracking",
-      description: "Track your delivery in real-time from our mobile app",
-      stat: "Real-time Updates"
+      icon: <FiZap />,
+      title: "IoT Technology",
+      description: "Smart meters with real-time tracking and automated notifications",
+      stat: "Smart"
     },
     {
-      icon: <FiCheckCircle />,
-      title: "Smart Monitoring",
-      description: "IoT sensors predict when you'll need a refill",
-      stat: "99% Accuracy"
+      icon: <FiTrendingUp />,
+      title: "Market Growth",
+      description: "Targeting Nigeria's 5 million metric tonnes LPG expansion by 2030",
+      stat: "Growing"
     }
   ]
 
@@ -70,15 +70,15 @@ export default function FeaturesSection() {
         {/* Header */}
         <div className="text-center mb-16">
           <div className="inline-flex items-center gap-2 px-4 py-2 bg-blue-50 text-blue-600 rounded-full font-semibold mb-4">
-            <div className="w-2 h-2 bg-blue-600 rounded-full"></div>
+            <div className="w-2 h-2 bg-blue-600 rounded-full animate-pulse"></div>
             How It Works
           </div>
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 mb-4">
-            Never Run Out of Gas
-            <span className="text-gradient block">The Smart Way</span>
+            Smart Dual-Subscription
+            <span className="text-gradient block">IoT Metering</span>
           </h2>
           <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-            Four simple steps to reliable, worry-free gas delivery for your home
+            Technology-enabled LPG distribution with IoT meters and dual revenue streams
           </p>
         </div>
 

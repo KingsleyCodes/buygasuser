@@ -1,43 +1,43 @@
 'use client'
 
-import { FiAward, FiUsers, FiMapPin, FiHeadphones, FiPercent, FiShield } from 'react-icons/fi'
+import { FiAward, FiUsers, FiMapPin, FiHeadphones, FiPercent, FiShield, FiZap, FiTrendingUp, FiPieChart, FiTarget, FiDollarSign, FiSmartphone } from 'react-icons/fi'
 
 export default function WhyChooseUsSection() {
   const benefits = [
     {
-      icon: <FiAward />,
-      title: "Industry Leader",
-      description: "Pioneers in smart gas delivery technology with 5+ years of experience",
+      icon: <FiZap />,
+      title: "IoT Technology",
+      description: "Smart meters with QR tagging for real-time consumption tracking and automated supply",
       color: "from-blue-500 to-blue-600"
     },
     {
-      icon: <FiUsers />,
-      title: "10,000+ Happy Homes",
-      description: "Trusted by thousands of households across Nigeria",
+      icon: <FiDollarSign />,
+      title: "Dual Revenue Model",
+      description: "Prepaid PAYG for households and Postpaid Smart-as-a-Service for businesses",
       color: "from-blue-600 to-blue-700"
     },
     {
-      icon: <FiMapPin />,
-      title: "Wide Coverage",
-      description: "Serving 50+ cities with plans to expand nationwide",
+      icon: <FiTrendingUp />,
+      title: "Market Leadership",
+      description: "Pioneering IoT metering in Nigeria's LPG market with 744.5% projected ROI",
       color: "from-blue-700 to-blue-800"
     },
     {
-      icon: <FiHeadphones />,
-      title: "24/7 Support",
-      description: "Round-the-clock customer service and emergency support",
+      icon: <FiPieChart />,
+      title: "Cost Control",
+      description: "Businesses track consumption per shift/batch for operational efficiency",
       color: "from-blue-800 to-blue-900"
     },
     {
-      icon: <FiPercent />,
-      title: "Cost Savings",
-      description: "Save up to 30% compared to traditional gas vendors",
+      icon: <FiSmartphone />,
+      title: "Digital Platform",
+      description: "IoT Digital Platform with cloud analytics and route optimization",
       color: "from-blue-500 to-blue-700"
     },
     {
-      icon: <FiShield />,
-      title: "Safety First",
-      description: "All technicians are safety-certified and trained professionals",
+      icon: <FiTarget />,
+      title: "Government Alignment",
+      description: "Supports Nigeria's National LPG Expansion Plan targeting 5M MT by 2030",
       color: "from-blue-600 to-blue-800"
     }
   ]
@@ -49,35 +49,35 @@ export default function WhyChooseUsSection() {
           {/* Left Content */}
           <div>
             <div className="inline-flex items-center gap-2 px-4 py-2 bg-blue-50 text-blue-600 rounded-full font-semibold mb-4">
-              Why Choose BuyGas
+              Why Choose BIIL GAS
             </div>
             <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 mb-6">
-              The Smart Choice for
-              <span className="text-gradient block">Modern Homes</span>
+              IoT-Powered LPG
+              <span className="text-gradient block">Metering Solutions</span>
             </h2>
             <p className="text-lg text-gray-600 mb-8">
-              We combine cutting-edge technology with reliable service to deliver an unmatched gas delivery experience. 
-              No more worrying about running out of gas or dealing with unreliable vendors.
+              We combine cutting-edge IoT technology with Nigeria's LPG expansion goals to deliver 
+              efficient, affordable, and reliable gas metering solutions for households and businesses.
             </p>
             
             <div className="space-y-6">
               <div className="flex items-start gap-4">
                 <div className="w-12 h-12 rounded-lg bg-gradient-to-br from-blue-500 to-blue-600 flex items-center justify-center flex-shrink-0">
-                  <FiShield className="text-white text-xl" />
+                  <FiZap className="text-white text-xl" />
                 </div>
                 <div>
-                  <h4 className="text-xl font-bold text-gray-900 mb-2">100% Safe & Certified</h4>
-                  <p className="text-gray-600">All our equipment meets the highest safety standards, and our technicians are fully certified.</p>
+                  <h4 className="text-xl font-bold text-gray-900 mb-2">Smart IoT Technology</h4>
+                  <p className="text-gray-600">Deploying 75 IoT smart meters in pilot phase with QR tagging and real-time tracking capabilities.</p>
                 </div>
               </div>
               
               <div className="flex items-start gap-4">
                 <div className="w-12 h-12 rounded-lg bg-gradient-to-br from-blue-600 to-blue-700 flex items-center justify-center flex-shrink-0">
-                  <FiPercent className="text-white text-xl" />
+                  <FiDollarSign className="text-white text-xl" />
                 </div>
                 <div>
-                  <h4 className="text-xl font-bold text-gray-900 mb-2">Guaranteed Savings</h4>
-                  <p className="text-gray-600">Our smart monitoring helps optimize consumption, saving you up to 30% on gas costs.</p>
+                  <h4 className="text-xl font-bold text-gray-900 mb-2">Affordable PAYG Model</h4>
+                  <p className="text-gray-600">Overcoming the N10,000-25,000 lump-sum refill barrier with micro-payments per kg used.</p>
                 </div>
               </div>
             </div>

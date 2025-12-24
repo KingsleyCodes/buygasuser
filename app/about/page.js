@@ -16,118 +16,122 @@ import {
   FiStar,
   FiTruck,
   FiZap,
-  FiCalendar
+  FiCalendar,
+  FiPieChart,
+  FiDollarSign,
+  FiSmartphone,
+  FiActivity
 } from 'react-icons/fi'
 import { motion } from 'framer-motion'
 
 export default function AboutPage() {
-  const [activeValue, setActiveValue] = useState('safety')
+  const [activeValue, setActiveValue] = useState('technology')
 
   const teamMembers = [
     {
-      name: 'Chinedu Okoro',
-      role: 'CEO & Founder',
-      bio: 'Former energy sector executive with 15+ years experience. Passionate about solving Nigeria\'s energy challenges.',
-      image: '/team/chinedu.jpg',
+      name: 'Executive Team',
+      role: 'Leadership',
+      bio: 'Experienced energy and technology professionals driving Nigeria\'s LPG digital transformation',
+      image: '/team/executive.jpg',
       color: 'from-blue-500 to-blue-600'
     },
     {
-      name: 'Amina Suleiman',
-      role: 'Head of Operations',
-      bio: 'Logistics expert with experience across West Africa. Ensures seamless delivery operations.',
-      image: '/team/amina.jpg',
+      name: 'Technology Team',
+      role: 'IoT & Software',
+      bio: 'Specialists in IoT hardware, software development, and cloud analytics for smart metering',
+      image: '/team/tech.jpg',
       color: 'from-blue-600 to-blue-700'
     },
     {
-      name: 'Emeka Nwosu',
-      role: 'Technology Director',
-      bio: 'IoT specialist who developed our smart sensor technology. MIT graduate with AI background.',
-      image: '/team/emeka.jpg',
+      name: 'Operations Team',
+      role: 'LPG Distribution',
+      bio: 'Experts in LPG logistics, cylinder management, and partner filling plant coordination',
+      image: '/team/operations.jpg',
       color: 'from-blue-700 to-blue-800'
     },
     {
-      name: 'Funmi Adebayo',
-      role: 'Customer Experience',
-      bio: 'Dedicated to ensuring every Nigerian household gets exceptional service. 10+ years in customer service.',
-      image: '/team/funmi.jpg',
+      name: 'Business Development',
+      role: 'B2B Partnerships',
+      bio: 'Focus on securing high-value B2B contracts and enterprise solutions for SMEs',
+      image: '/team/business.jpg',
       color: 'from-blue-800 to-blue-900'
     }
   ]
 
   const companyValues = [
     {
-      id: 'safety',
-      title: 'Safety First',
-      icon: <FiShield />,
-      description: 'Every cylinder undergoes 15-point safety checks. All handlers are certified professionals.',
+      id: 'technology',
+      title: 'IoT Innovation',
+      icon: <FiZap />,
+      description: 'Deploying Smart IoT meters and digital platforms for efficient LPG distribution',
       color: 'bg-blue-50 text-blue-700'
     },
     {
-      id: 'reliability',
-      title: 'Reliability',
-      icon: <FiCheckCircle />,
-      description: '99.8% on-time delivery rate. We keep our promises to Nigerian families and businesses.',
+      id: 'affordability',
+      title: 'Affordable Access',
+      icon: <FiDollarSign />,
+      description: 'Overcoming N10,000-25,000 lump-sum cost barriers with PAYG micro-payments',
       color: 'bg-green-50 text-green-700'
     },
     {
-      id: 'innovation',
-      title: 'Innovation',
-      icon: <FiZap />,
-      description: 'Using IoT and AI to solve Nigeria\'s gas delivery challenges. Constantly improving our technology.',
+      id: 'efficiency',
+      title: 'Operational Efficiency',
+      icon: <FiPieChart />,
+      description: 'Achieving 20-30% logistics savings through digital distribution systems',
       color: 'bg-purple-50 text-purple-700'
     },
     {
-      id: 'community',
-      title: 'Community',
-      icon: <FiUsers />,
-      description: 'Supporting Nigerian communities through job creation and local partnerships.',
+      id: 'growth',
+      title: 'Market Growth',
+      icon: <FiTrendingUp />,
+      description: 'Aligning with Nigeria\'s 5M MT LPG expansion target by 2030',
       color: 'bg-orange-50 text-orange-700'
     }
   ]
 
   const milestones = [
-    { year: '2021', title: 'Founded in Lagos', description: 'Started with 5 employees serving 50 households' },
-    { year: '2022', title: 'Expanded to Abuja', description: 'Launched services in the Federal Capital Territory' },
-    { year: '2023', title: 'Smart Sensor Launch', description: 'Introduced IoT-based automatic delivery system' },
-    { year: '2024', title: '10,000+ Homes', description: 'Reached milestone of serving 10,000 Nigerian households' },
-    { year: '2025', title: 'National Expansion', description: 'Plans to expand to 5 more Nigerian states' }
+    { year: '2010', title: 'Company Founded', description: 'Buy Gas Integrated Industries Limited (BIIL GAS) established' },
+    { year: '2021', title: 'IoT Technology Development', description: 'Started development of Smart IoT metering platform' },
+    { year: '2023', title: 'Business Model Validation', description: 'Validated dual-subscription model for Nigerian market' },
+    { year: '2024', title: 'Pre-Seed Funding', description: 'Secured N30M investment for pilot deployment' },
+    { year: '2025', title: 'Pilot Launch', description: 'Deploying 75 IoT meters in initial pilot phase' }
   ]
 
   const impactStats = [
-    { value: '50,000+', label: 'Deliveries Completed', icon: <FiTruck />, color: 'text-blue-600' },
-    { value: '10,000+', label: 'Homes Served', icon: <FiUsers />, color: 'text-green-600' },
-    { value: '200+', label: 'Jobs Created', icon: <FiHeart />, color: 'text-red-600' },
-    { value: '99.8%', label: 'Customer Satisfaction', icon: <FiStar />, color: 'text-yellow-600' },
-    { value: '24/7', label: 'Support Available', icon: <FiClock />, color: 'text-purple-600' },
-    { value: '3', label: 'Cities Served', icon: <FiMapPin />, color: 'text-orange-600' }
+    { value: '75+', label: 'IoT Units Deploying', icon: <FiZap />, color: 'text-blue-600' },
+    { value: 'N30M', label: 'Pre-Seed Investment', icon: <FiDollarSign />, color: 'text-green-600' },
+    { value: '744.5%', label: 'Projected ROI', icon: <FiTrendingUp />, color: 'text-red-600' },
+    { value: '5 Years', label: 'Growth Horizon', icon: <FiCalendar />, color: 'text-yellow-600' },
+    { value: 'N300M+', label: 'Seed Round Target', icon: <FiTarget />, color: 'text-purple-600' },
+    { value: '2 Models', label: 'Dual-Subscription', icon: <FiUsers />, color: 'text-orange-600' }
   ]
 
   const testimonials = [
     {
-      name: 'Mrs. Adebayo',
-      location: 'Lekki, Lagos',
-      text: 'As a working mother, BuyGas has been a lifesaver. No more worrying about running out of gas during cooking.',
+      name: 'SME Restaurant Owner',
+      location: 'Abuja',
+      text: 'The cost control features have transformed how we manage our kitchen expenses. Tracking consumption per shift is invaluable.',
       rating: 5
     },
     {
-      name: 'Mr. Ibrahim',
-      location: 'Maitama, Abuja',
-      text: 'The emergency service saved our restaurant during a busy weekend. Professional and reliable.',
+      name: 'Household User',
+      location: 'Lagos',
+      text: 'PAYG model saved us from the N25,000 lump-sum burden. Now we pay only for what we use, per cooking session.',
       rating: 5
     },
     {
-      name: 'Chioma',
+      name: 'Business Analyst',
       location: 'Port Harcourt',
-      text: 'Love the smart sensor feature! It automatically orders before we run out. Perfect for busy families.',
+      text: 'The IoT data analytics help us optimize our LPG consumption. Automated supply ensures we never run out during operations.',
       rating: 5
     }
   ]
 
   const certifications = [
-    { name: 'SON Certified', description: 'Standards Organization of Nigeria' },
-    { name: 'Safety Certified', description: 'LPG Safety Certification' },
-    { name: 'ISO 9001', description: 'Quality Management System' },
-    { name: 'Best Startup 2023', description: 'Nigerian Energy Awards' }
+    { name: 'LPG Compliance', description: 'National LPG Expansion Plan' },
+    { name: 'Technology Innovation', description: 'IoT Smart Metering' },
+    { name: 'Clean Energy', description: 'National Clean Cooking Policy' },
+    { name: 'Business Model', description: 'Dual-Subscription Pioneer' }
   ]
 
   return (
@@ -146,7 +150,7 @@ export default function AboutPage() {
               className="inline-flex items-center gap-2 px-4 py-2 bg-blue-100 text-blue-700 rounded-full font-semibold mb-6"
             >
               <div className="w-2 h-2 bg-blue-600 rounded-full animate-pulse"></div>
-              Our Story
+              Company Profile
             </motion.div>
             
             <motion.h1 
@@ -155,8 +159,8 @@ export default function AboutPage() {
               transition={{ duration: 0.5, delay: 0.1 }}
               className="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 mb-6"
             >
-              Revolutionizing Gas Delivery
-              <span className="block text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-blue-500">in Nigeria</span>
+              Bayview Integrated Industries
+              <span className="block text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-blue-500">Buy GAS IoT Metering</span>
             </motion.h1>
             
             <motion.p 
@@ -165,8 +169,8 @@ export default function AboutPage() {
               transition={{ duration: 0.5, delay: 0.2 }}
               className="text-xl text-gray-600 max-w-3xl mx-auto mb-10"
             >
-              Founded in 2021, BuyGas is on a mission to make reliable gas delivery accessible to every Nigerian household. 
-              Through innovation and dedication, we're solving a critical challenge for millions of families.
+              An energy technology startup disrupting Nigeria's LPG market through IoT Smart Meters 
+              and dual-subscription models for B2B/B2C consumption.
             </motion.p>
           </div>
         </div>
@@ -178,23 +182,27 @@ export default function AboutPage() {
           <div className="grid lg:grid-cols-2 gap-12 items-center mb-20">
             <div>
               <div className="inline-flex items-center gap-2 px-4 py-2 bg-blue-50 text-blue-600 rounded-full font-semibold mb-6">
-                Our Mission
+                Business Overview
               </div>
               <h2 className="text-3xl font-bold text-gray-900 mb-6">
-                Making Reliable Energy Accessible to Every Nigerian
+                IoT-Powered LPG Metering Platform
               </h2>
               <div className="space-y-4 text-gray-600">
                 <p>
-                  In 2021, our founder Chinedu Okoro experienced firsthand the frustration of running out of gas during an important family gathering. 
-                  This common Nigerian problem sparked an idea: what if gas delivery could be as reliable as electricity or water?
+                  <strong>Buy Gas</strong> is an energy technology startup deploying Smart IoT meters with 
+                  a dual-subscription model (Prepaid and Postpaid) for B2B/B2C LPG consumption in Nigeria.
                 </p>
                 <p>
-                  Starting with just 5 employees and serving 50 households in Lagos, we've grown to become Nigeria's most trusted gas delivery service. 
-                  Our journey has been powered by innovation, particularly our IoT smart sensor technology that predicts when you'll run out.
+                  Our <strong>N30 million pre-seed investment</strong> is de-risking the technology and 
+                  operational model through a pilot fleet of 75 IoT meters and securing high-value B2B contracts.
                 </p>
                 <p>
-                  Today, we serve thousands of Nigerian families and businesses across three major cities, with plans to expand nationwide. 
-                  Our commitment remains the same: safe, reliable, and convenient gas delivery for all.
+                  We offer <strong>traceability, transparency, and efficiency</strong> across the LPG value chain - 
+                  from cylinder filling plants to last-mile customers - achieving superior unit economics.
+                </p>
+                <p>
+                  Our strategy targets a <strong>N300M+ Seed Round in Year 2</strong> and projects 
+                  <strong> 744.5% ROI over five years</strong> through IoT-enabled LPG distribution.
                 </p>
               </div>
             </div>
@@ -218,11 +226,11 @@ export default function AboutPage() {
           <div className="mb-20">
             <div className="text-center mb-12">
               <div className="inline-flex items-center gap-2 px-4 py-2 bg-blue-50 text-blue-600 rounded-full font-semibold mb-4">
-                Our Values
+                Strategic Focus
               </div>
-              <h2 className="text-3xl font-bold text-gray-900 mb-4">What Drives Us</h2>
+              <h2 className="text-3xl font-bold text-gray-900 mb-4">Core Business Elements</h2>
               <p className="text-gray-600 max-w-2xl mx-auto">
-                These core values guide every decision we make and every service we provide
+                Key components driving our IoT metering business model
               </p>
             </div>
 
@@ -255,69 +263,85 @@ export default function AboutPage() {
                       <p className="text-gray-600 text-lg">{value.description}</p>
                     </div>
                     <div className="bg-white rounded-xl p-8 shadow-lg">
-                      <h4 className="font-bold text-gray-900 mb-4">How We Live This Value:</h4>
+                      <h4 className="font-bold text-gray-900 mb-4">Business Impact:</h4>
                       <ul className="space-y-3">
-                        {value.id === 'safety' && (
+                        {value.id === 'technology' && (
                           <>
                             <li className="flex items-center gap-3">
                               <FiCheckCircle className="text-green-500" />
-                              <span>15-point cylinder safety checks</span>
+                              <span>Smart IoT meters with QR tagging</span>
                             </li>
                             <li className="flex items-center gap-3">
                               <FiCheckCircle className="text-green-500" />
-                              <span>Certified delivery personnel</span>
+                              <span>Dual-billing platform for prepaid/postpaid</span>
                             </li>
                             <li className="flex items-center gap-3">
                               <FiCheckCircle className="text-green-500" />
-                              <span>Regular safety training</span>
+                              <span>Cloud analytics for predictive insights</span>
+                            </li>
+                            <li className="flex items-center gap-3">
+                              <FiCheckCircle className="text-green-500" />
+                              <span>Mobile app for real-time consumption tracking</span>
                             </li>
                           </>
                         )}
-                        {value.id === 'reliability' && (
+                        {value.id === 'affordability' && (
                           <>
                             <li className="flex items-center gap-3">
                               <FiCheckCircle className="text-green-500" />
-                              <span>99.8% on-time delivery rate</span>
+                              <span>Micro-payments per kg used (not per cylinder)</span>
                             </li>
                             <li className="flex items-center gap-3">
                               <FiCheckCircle className="text-green-500" />
-                              <span>24/7 customer support</span>
+                              <span>Overcomes N10,000-25,000 lump-sum barrier</span>
                             </li>
                             <li className="flex items-center gap-3">
                               <FiCheckCircle className="text-green-500" />
-                              <span>Real-time delivery tracking</span>
+                              <span>Remote valve shut-off upon zero balance</span>
+                            </li>
+                            <li className="flex items-center gap-3">
+                              <FiCheckCircle className="text-green-500" />
+                              <span>Low credit notifications for timely top-up</span>
                             </li>
                           </>
                         )}
-                        {value.id === 'innovation' && (
+                        {value.id === 'efficiency' && (
                           <>
                             <li className="flex items-center gap-3">
                               <FiCheckCircle className="text-green-500" />
-                              <span>IoT smart sensor technology</span>
+                              <span>20-30% logistics cost savings</span>
                             </li>
                             <li className="flex items-center gap-3">
                               <FiCheckCircle className="text-green-500" />
-                              <span>AI-powered delivery optimization</span>
+                              <span>Route optimization through digital platform</span>
                             </li>
                             <li className="flex items-center gap-3">
                               <FiCheckCircle className="text-green-500" />
-                              <span>Mobile app with real-time updates</span>
+                              <span>Reduced cylinder losses through tracking</span>
+                            </li>
+                            <li className="flex items-center gap-3">
+                              <FiCheckCircle className="text-green-500" />
+                              <span>Automated dispatch notifications</span>
                             </li>
                           </>
                         )}
-                        {value.id === 'community' && (
+                        {value.id === 'growth' && (
                           <>
                             <li className="flex items-center gap-3">
                               <FiCheckCircle className="text-green-500" />
-                              <span>Creating local employment opportunities</span>
+                              <span>Targeting 5 million metric tonnes by 2030</span>
                             </li>
                             <li className="flex items-center gap-3">
                               <FiCheckCircle className="text-green-500" />
-                              <span>Partnerships with Nigerian SMEs</span>
+                              <span>Converting 30 million households to LPG</span>
                             </li>
                             <li className="flex items-center gap-3">
                               <FiCheckCircle className="text-green-500" />
-                              <span>Community safety awareness programs</span>
+                              <span>National Clean Cooking Policy alignment</span>
+                            </li>
+                            <li className="flex items-center gap-3">
+                              <FiCheckCircle className="text-green-500" />
+                              <span>Hyper-scale expansion Years 2-3</span>
                             </li>
                           </>
                         )}
@@ -332,11 +356,11 @@ export default function AboutPage() {
           <div className="mb-20">
             <div className="text-center mb-12">
               <div className="inline-flex items-center gap-2 px-4 py-2 bg-blue-50 text-blue-600 rounded-full font-semibold mb-4">
-                Meet Our Team
+                Organizational Structure
               </div>
-              <h2 className="text-3xl font-bold text-gray-900 mb-4">The People Behind BuyGas</h2>
+              <h2 className="text-3xl font-bold text-gray-900 mb-4">Expert Teams Driving Innovation</h2>
               <p className="text-gray-600 max-w-2xl mx-auto">
-                A dedicated team of Nigerians passionate about solving energy challenges
+                Specialized teams focused on technology, operations, and market expansion
               </p>
             </div>
 
@@ -372,11 +396,11 @@ export default function AboutPage() {
           <div className="mb-20">
             <div className="text-center mb-12">
               <div className="inline-flex items-center gap-2 px-4 py-2 bg-blue-50 text-blue-600 rounded-full font-semibold mb-4">
-                Our Journey
+                Business Timeline
               </div>
-              <h2 className="text-3xl font-bold text-gray-900 mb-4">Milestones & Growth</h2>
+              <h2 className="text-3xl font-bold text-gray-900 mb-4">Strategic Development Phases</h2>
               <p className="text-gray-600 max-w-2xl mx-auto">
-                From a small startup to Nigeria's leading gas delivery service
+                From establishment to IoT metering market leadership
               </p>
             </div>
 
@@ -407,11 +431,11 @@ export default function AboutPage() {
           <div className="mb-20">
             <div className="text-center mb-12">
               <div className="inline-flex items-center gap-2 px-4 py-2 bg-blue-50 text-blue-600 rounded-full font-semibold mb-4">
-                Customer Stories
+                Market Feedback
               </div>
-              <h2 className="text-3xl font-bold text-gray-900 mb-4">What Our Customers Say</h2>
+              <h2 className="text-3xl font-bold text-gray-900 mb-4">Target Segment Validation</h2>
               <p className="text-gray-600 max-w-2xl mx-auto">
-                Hear from Nigerian families and businesses who trust us
+                Insights from our primary customer segments
               </p>
             </div>
 
@@ -437,9 +461,9 @@ export default function AboutPage() {
           <div className="mb-20">
             <div className="text-center mb-12">
               <div className="inline-flex items-center gap-2 px-4 py-2 bg-blue-50 text-blue-600 rounded-full font-semibold mb-4">
-                Certifications & Awards
+                Market Positioning
               </div>
-              <h2 className="text-3xl font-bold text-gray-900 mb-4">Recognized for Excellence</h2>
+              <h2 className="text-3xl font-bold text-gray-900 mb-4">Strategic Advantages</h2>
             </div>
 
             <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
@@ -455,26 +479,58 @@ export default function AboutPage() {
             </div>
           </div>
 
+          {/* Revenue Streams */}
+          <div className="mb-20">
+            <div className="text-center mb-12">
+              <div className="inline-flex items-center gap-2 px-4 py-2 bg-blue-50 text-blue-600 rounded-full font-semibold mb-4">
+                Business Model
+              </div>
+              <h2 className="text-3xl font-bold text-gray-900 mb-4">Multiple Revenue Streams</h2>
+              <p className="text-gray-600 max-w-2xl mx-auto">
+                Diversified income sources from IoT-enabled LPG distribution
+              </p>
+            </div>
+
+            <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+              {[
+                { title: 'Platform Licensing', desc: 'Fees for B2B operations', icon: <FiSmartphone /> },
+                { title: 'LPG Sales', desc: 'Per kg cylinder sales', icon: <FiActivity /> },
+                { title: 'Data Analytics', desc: 'Subscription insights', icon: <FiPieChart /> },
+                { title: 'Delivery Commissions', desc: 'Logistics revenue share', icon: <FiTruck /> },
+                { title: 'Equipment Lease', desc: 'Cylinder lease to businesses', icon: <FiDollarSign /> },
+                { title: 'Transaction Charges', desc: 'Digital payment fees', icon: <FiTrendingUp /> },
+              ].map((stream, index) => (
+                <div key={index} className="bg-white rounded-xl shadow-lg p-6 hover:shadow-xl transition-shadow">
+                  <div className="w-12 h-12 rounded-lg bg-gradient-to-r from-blue-600 to-blue-700 text-white flex items-center justify-center mb-4">
+                    {stream.icon}
+                  </div>
+                  <h3 className="text-lg font-bold text-gray-900 mb-2">{stream.title}</h3>
+                  <p className="text-gray-600 text-sm">{stream.desc}</p>
+                </div>
+              ))}
+            </div>
+          </div>
+
           {/* Final CTA */}
           <div className="text-center">
             <div className="bg-gradient-to-r from-blue-600 to-blue-700 rounded-2xl p-8 md:p-12 text-white">
-              <h2 className="text-3xl font-bold mb-6">Join Our Mission</h2>
+              <h2 className="text-3xl font-bold mb-6">Join the LPG Digital Revolution</h2>
               <p className="text-blue-100 max-w-2xl mx-auto mb-8">
-                Be part of the revolution in Nigeria's energy sector. Together, we can make reliable gas delivery accessible to all.
+                Partner with us to transform Nigeria's LPG market through IoT technology and smart metering solutions.
               </p>
               
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
                 <Link
-                  href="/careers"
+                  href="/investors"
                   className="px-8 py-4 bg-white text-blue-600 font-bold rounded-xl hover:bg-blue-50 transition-all"
                 >
-                  View Careers
+                  Investor Information
                 </Link>
                 <Link
-                  href="/contact"
+                  href="/partnerships"
                   className="px-8 py-4 bg-transparent text-white font-bold rounded-xl border-2 border-white hover:bg-white/10 transition-all"
                 >
-                  Partner With Us
+                  B2B Partnerships
                 </Link>
               </div>
             </div>

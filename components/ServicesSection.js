@@ -1,7 +1,7 @@
 'use client'
 
 import { useState } from 'react'
-import { FiZap, FiClock, FiCalendar, FiShield, FiTruck, FiBarChart } from 'react-icons/fi'
+import { FiZap, FiClock, FiCalendar, FiShield, FiTruck, FiBarChart, FiDollarSign, FiPieChart, FiTrendingUp, FiUsers } from 'react-icons/fi'
 import Link from 'next/link'
 
 export default function ServicesSection() {
@@ -10,51 +10,51 @@ export default function ServicesSection() {
   const services = [
     {
       id: 1,
-      icon: <FiZap />,
-      title: "Smart Automatic Delivery",
-      description: "Our IoT sensors monitor your gas levels and automatically schedule deliveries before you run out.",
-      features: ["24/7 Monitoring", "Auto Scheduling", "Usage Analytics"],
+      icon: <FiDollarSign />,
+      title: "Prepaid PAYG for Households",
+      description: "Micro-payments model overcoming N10,000–N25,000 lump-sum refill costs. Pay per kg used.",
+      features: ["Micro-Payments", "Affordable Usage", "Customer-Owned Cylinders"],
       color: "from-blue-500 to-blue-600",
-      cta: "Learn More",
-      link: "/services/automatic"
+      cta: "Prepaid Plans",
+      link: "/prepaid"
     },
     {
       id: 2,
-      icon: <FiClock />,
-      title: "Emergency Delivery",
-      description: "Ran out of gas? Get emergency delivery within 60 minutes in covered areas. 24/7 availability.",
-      features: ["60-Minute Guarantee", "24/7 Service", "Priority Support"],
+      icon: <FiPieChart />,
+      title: "Postpaid for Businesses",
+      description: "Smart-as-a-Service for SMEs with consumption tracking and automated supply.",
+      features: ["Cost Control", "Automated Supply", "B2B Asset Provision"],
       color: "from-blue-600 to-blue-700",
-      cta: "Emergency Order",
-      link: "/services/emergency"
+      cta: "Business Solutions",
+      link: "/business"
     },
     {
       id: 3,
-      icon: <FiCalendar />,
-      title: "Scheduled Delivery",
-      description: "Plan your deliveries in advance. Choose your preferred time slots and delivery frequency.",
-      features: ["Flexible Scheduling", "Recurring Orders", "Time Slot Selection"],
+      icon: <FiZap />,
+      title: "IoT Meter Technology",
+      description: "Smart IoT meters with QR tagging for real-time tracking and consumption monitoring.",
+      features: ["IoT Smart Meters", "Real-time Tracking", "QR Tagging"],
       color: "from-blue-700 to-blue-800",
-      cta: "Schedule Now",
-      link: "/services/scheduled"
+      cta: "Technology",
+      link: "/technology"
     },
     {
       id: 4,
-      icon: <FiShield />,
-      title: "Business Solutions",
-      description: "Tailored gas delivery solutions for restaurants, hotels, and commercial establishments.",
-      features: ["Bulk Delivery", "Custom Schedules", "Dedicated Support"],
+      icon: <FiTrendingUp />,
+      title: "Enterprise Solutions",
+      description: "B2B contracts with asset provision, maintenance, and guaranteed logistics.",
+      features: ["Asset Provision", "Guaranteed Logistics", "B2B Contracts"],
       color: "from-blue-800 to-blue-900",
-      cta: "Business Plans",
-      link: "/services/business"
+      cta: "Enterprise Plans",
+      link: "/enterprise"
     }
   ]
 
   const stats = [
-    { value: "50,000+", label: "Deliveries Made" },
-    { value: "60min", label: "Emergency Response" },
-    { value: "99.8%", label: "On-time Delivery" },
-    { value: "24/7", label: "Customer Support" }
+    { value: "75+", label: "IoT Units Deployed" },
+    { value: "N300M", label: "Seed Round Target" },
+    { value: "744.5%", label: "Projected ROI" },
+    { value: "5 Years", label: "Growth Plan" }
   ]
 
   return (
@@ -64,14 +64,14 @@ export default function ServicesSection() {
         <div className="text-center mb-16">
           <div className="inline-flex items-center gap-2 px-4 py-2 bg-blue-100 text-blue-700 rounded-full font-semibold mb-4">
             <div className="w-2 h-2 bg-blue-600 rounded-full animate-pulse"></div>
-            Our Services
+            Revenue Streams
           </div>
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 mb-4">
-            Smart Gas Delivery
-            <span className="text-gradient block">Solutions</span>
+            Dual-Subscription Model
+            <span className="text-gradient block">B2B & B2C Solutions</span>
           </h2>
           <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-            From automatic delivery to emergency service, we have the right solution for your needs
+            IoT-enabled LPG distribution with specialized solutions for households and businesses
           </p>
         </div>
 

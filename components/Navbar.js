@@ -43,12 +43,12 @@ export default function Navbar() {
             <div className="flex items-center gap-2 mb-2 sm:mb-0">
               <div className="flex items-center gap-1">
                 <div className="w-2 h-2 bg-white rounded-full animate-pulse"></div>
-                <span className="font-medium">Trusted by 10,000+ households nationwide</span>
+                <span className="font-medium">IoT-powered LPG metering solutions</span>
               </div>
             </div>
             <div className="flex items-center gap-4">
-              <span>24/7 Emergency Line</span>
-              <a href="tel:1800289427" className="font-bold hover:text-blue-100 transition-colors">1-800-BUY-GAS</a>
+              <span>24/7 Support</span>
+              <a href="tel:+2349023505265" className="font-bold hover:text-blue-100 transition-colors">+234 902 350 5265</a>
             </div>
           </div>
         </div>
@@ -71,7 +71,7 @@ export default function Navbar() {
                 <div className="relative w-8 h-8 sm:w-10 sm:h-10 md:w-14 md:h-14">
                   <Image
                     src="/logo.png"
-                    alt="BuyGas Logo"
+                    alt="BIIL GAS Logo"
                     fill
                     className="object-contain"
                     sizes="(max-width: 640px) 32px, (max-width: 768px) 40px, 56px"
@@ -85,11 +85,11 @@ export default function Navbar() {
                 {/* Optional: Uncomment if you want text on larger screens */}
                 {/* 
                 <span className="hidden sm:block text-lg sm:text-xl md:text-2xl font-bold bg-gradient-to-r from-blue-700 to-blue-600 bg-clip-text text-transparent tracking-tight">
-                  BuyGas
+                  BIIL GAS
                 </span>
                 */}
                 <span className="hidden sm:block text-[10px] xs:text-xs text-gray-500 -mt-0.5 sm:-mt-1">
-                  Smart Gas Delivery
+                  Smart Gas Metering
                 </span>
               </div>
             </Link>
@@ -110,7 +110,7 @@ export default function Navbar() {
               </div>
             </div>
 
-            {/* Desktop Right Side - Search & Contact */}
+            {/* Desktop Right Side - Search & Invest Button */}
             <div className="hidden lg:flex items-center gap-4">
               <div className="relative">
                 <FiSearch className="absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-400" />
@@ -122,23 +122,27 @@ export default function Navbar() {
               </div>
 
               <div className="flex items-center gap-3">
-                <Link 
-                  href="/contact" 
+                <a 
+                  href="https://buygas-neon.vercel.app/" 
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="px-6 py-3 bg-gradient-to-r from-blue-600 to-blue-700 text-white font-semibold rounded-lg hover:shadow-lg hover:shadow-blue-500/30 transition-all hover:scale-105 min-w-[140px] text-center"
                 >
-                  Contact Us
-                </Link>
+                  Invest Now
+                </a>
               </div>
             </div>
 
             {/* Tablet & Mobile Menu Trigger */}
             <div className="flex lg:hidden items-center gap-3">
-              <Link 
-                href="/contact" 
+              <a 
+                href="https://buygas-neon.vercel.app/" 
+                target="_blank"
+                rel="noopener noreferrer"
                 className="px-4 py-2 bg-gradient-to-r from-blue-600 to-blue-700 text-white font-semibold rounded-lg hover:shadow-lg transition-all text-sm min-w-[100px] text-center"
               >
-                Contact
-              </Link>
+                Invest Now
+              </a>
               <button
                 onClick={() => setIsMenuOpen(!isMenuOpen)}
                 className="p-2 rounded-lg hover:bg-blue-50 transition-colors"
@@ -179,6 +183,19 @@ export default function Navbar() {
                     </Link>
                   </div>
                 ))}
+                
+                {/* Mobile Menu Invest Now Button */}
+                <div className="px-4 py-6">
+                  <a 
+                    href="https://buygas-neon.vercel.app/" 
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="block w-full py-3 bg-gradient-to-r from-blue-600 to-blue-700 text-white font-semibold rounded-lg hover:shadow-lg transition-all text-center"
+                    onClick={() => setIsMenuOpen(false)}
+                  >
+                    Invest Now
+                  </a>
+                </div>
               </div>
             </div>
           )}

@@ -2,7 +2,7 @@
 
 import { useState, useEffect, useCallback } from 'react'
 import Link from 'next/link'
-import { FiChevronLeft, FiChevronRight, FiPlay, FiPause, FiCheck, FiClock, FiShield, FiMapPin, FiPhone } from 'react-icons/fi'
+import { FiChevronLeft, FiChevronRight, FiPlay, FiPause, FiCheck, FiClock, FiShield, FiMapPin, FiPhone, FiDollarSign, FiPieChart, FiTrendingUp, FiSmartphone } from 'react-icons/fi'
 
 export default function HeroSection() {
   const [currentSlide, setCurrentSlide] = useState(0)
@@ -14,51 +14,51 @@ export default function HeroSection() {
   const slides = [
     {
       id: 1,
-      title: "Smart Gas Delivery",
-      subtitle: "Never Run Out Again",
-      description: "IoT-powered sensors monitor your gas levels and automatically schedule deliveries before you run out.",
+      title: "Never Run Out of Cooking Gas",
+      subtitle: "Pay For What You Use Only",
+      description: "Deploying Smart IoT meters with dual-subscription model (Prepaid and Postpaid) for B2B/B2C consumption.",
       image: "https://images.unsplash.com/photo-1581094794329-c8112a89af12?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80",
       gradient: "from-blue-900/70 via-blue-800/50 to-transparent",
       overlay: "from-blue-600/20 via-blue-500/10 to-transparent",
-      features: ["24/7 Monitoring", "Automatic Scheduling", "Real-time Tracking"],
+      features: ["IoT Smart Meters", "Dual-Subscription", "Real-time Tracking"],
       cta: "Get Started",
       ctaLink: "/services"
     },
     {
       id: 2,
-      title: "Emergency Delivery",
-      subtitle: "Within 60 Minutes",
-      description: "Ran out of gas? Our emergency service delivers within 60 minutes in covered areas. 24/7 availability.",
-      image: "https://images.unsplash.com/photo-1629909613654-28e377c37b09?ixlib=rb-4.0.3&auto=format&fit=crop&w=2068&q=80",
+      title: "Prepaid PAYG",
+      subtitle: "Overcome Lump-Sum Costs",
+      description: "Micro-payments model enabling affordable gas usage at N10,000 – N25,000 (12.5kg) refill cost barrier.",
+      image: "https://images.unsplash.com/photo-1560518883-ce09059eeffa?ixlib=rb-4.0.3&auto=format&fit=crop&w=2073&q=80",
       gradient: "from-purple-900/70 via-purple-800/50 to-transparent",
       overlay: "from-purple-600/20 via-purple-500/10 to-transparent",
-      features: ["60-Minute Guarantee", "24/7 Service", "Premium Support"],
-      cta: "Emergency Order",
-      ctaLink: "/contact"
+      features: ["Micro-Payments", "Affordable Usage", "Flexible Payment"],
+      cta: "Prepaid Plans",
+      ctaLink: "/prepaid"
     },
     {
       id: 3,
-      title: "Nationwide Coverage",
-      subtitle: "50+ Cities & Growing",
-      description: "We deliver to homes and businesses across major metropolitan areas with reliable, consistent service.",
-      image: "https://images.unsplash.com/photo-1524661135-423995f22d0b?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80",
+      title: "Business Solutions",
+      subtitle: "Cost Control & Automated Supply",
+      description: "Postpaid Smart-as-a-Service for SMEs with precise consumption tracking and automated delivery.",
+      image: "https://images.unsplash.com/photo-1556761175-b413da4baf72?ixlib=rb-4.0.3&auto=format&fit=crop&w=2074&q=80",
       gradient: "from-teal-900/70 via-teal-800/50 to-transparent",
       overlay: "from-teal-600/20 via-teal-500/10 to-transparent",
-      features: ["Wide Coverage", "Local Partners", "Reliable Service"],
-      cta: "Check Coverage",
-      ctaLink: "/coverage"
+      features: ["Cost Control", "Automated Supply", "B2B Tracking"],
+      cta: "Business Plans",
+      ctaLink: "/business"
     },
     {
       id: 4,
-      title: "Smart Management",
-      subtitle: "Optimize Consumption",
-      description: "Track usage patterns, get consumption insights, and save up to 30% on your gas bills.",
-      image: "https://images.unsplash.com/photo-1581092580497-e0d4cb184827?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80",
+      title: "Technology Platform",
+      subtitle: "Digital LPG Distribution",
+      description: "IoT Digital Platform with Smart Meters, QR tagging, cloud analytics, and route optimization.",
+      image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80",
       gradient: "from-indigo-900/70 via-indigo-800/50 to-transparent",
       overlay: "from-indigo-600/20 via-indigo-500/10 to-transparent",
-      features: ["Usage Analytics", "Cost Savings", "Smart Scheduling"],
-      cta: "Learn More",
-      ctaLink: "/about"
+      features: ["IoT Platform", "Cloud Analytics", "Digital Tracking"],
+      cta: "Technology",
+      ctaLink: "/technology"
     }
   ]
 
@@ -205,7 +205,7 @@ export default function HeroSection() {
             <div className="text-white">
               <div className="inline-flex items-center gap-2 bg-white/10 backdrop-blur-sm rounded-full px-4 py-2 mb-8 animate-fade-in border border-white/20">
                 <div className="w-2 h-2 bg-green-400 rounded-full animate-pulse" />
-                <span className="font-medium text-sm sm:text-base">Trusted by 10,000+ Households</span>
+                <span className="font-medium text-sm sm:text-base">Disrupting Nigerian LPG Market</span>
               </div>
 
               <h1 className="text-4xl sm:text-5xl lg:text-6xl xl:text-7xl font-bold mb-4 leading-tight">
@@ -256,17 +256,17 @@ export default function HeroSection() {
                 >
                   <span className="flex items-center justify-center gap-2">
                     <FiPhone className="group-hover:scale-110 transition-transform" />
-                    Emergency: 1-800-BUY-GAS
+                    Support: +234 902 350 5265
                   </span>
                 </Link>
               </div>
 
               <div className="flex flex-wrap gap-6">
                 {[
-                  { value: '4.9/5', label: 'Customer Rating' },
-                  { value: '60min', label: 'Fastest Delivery' },
-                  { value: '50+', label: 'Cities' },
-                  { value: '24/7', label: 'Support' }
+                  { value: '75+', label: 'IoT Units Deployed' },
+                  { value: 'Prepaid', label: 'Household Model' },
+                  { value: 'Postpaid', label: 'Business Model' },
+                  { value: 'IoT', label: 'Technology' }
                 ].map((stat, index) => (
                   <div key={index} className="text-center animate-fade-in" style={{ animationDelay: `${index * 100 + 400}ms` }}>
                     <div className="text-2xl sm:text-3xl font-bold text-white">{stat.value}</div>
@@ -283,7 +283,11 @@ export default function HeroSection() {
                   <div className="absolute inset-0 bg-gradient-to-b from-gray-900/50 to-gray-900/30 backdrop-blur-sm rounded-3xl border border-white/10 p-8">
                     <div className="relative mx-auto w-40 h-64">
                       <div className="absolute inset-0 bg-gradient-to-b from-gray-800 via-gray-900 to-gray-950 rounded-t-2xl rounded-b-3xl shadow-2xl">
-                        <div className="absolute top-4 left-1/2 transform -translate-x-1/2 w-32 h-8 bg-gradient-to-b from-gray-700 to-gray-800 rounded-lg" />
+                        {/* IoT Meter Display */}
+                        <div className="absolute top-4 left-1/2 transform -translate-x-1/2 w-32 h-6 bg-gradient-to-b from-gray-700 to-gray-800 rounded-lg flex items-center justify-center">
+                          <span className="text-xs text-cyan-400 font-mono">IoT METER</span>
+                        </div>
+                        {/* Consumption Level */}
                         <div className="absolute bottom-0 left-0 right-0">
                           <div className="relative h-48">
                             <div 
@@ -292,10 +296,11 @@ export default function HeroSection() {
                             >
                               <div className="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-transparent via-blue-400/50 to-transparent animate-pulse" />
                             </div>
-                            {[...Array(5)].map((_, i) => (
+                            {/* Data Points */}
+                            {[...Array(3)].map((_, i) => (
                               <div
                                 key={i}
-                                className="absolute w-2 h-2 bg-blue-400/50 rounded-full animate-bounce"
+                                className="absolute w-3 h-3 bg-cyan-400/50 rounded-full animate-bounce"
                                 style={{
                                   bottom: `${20 + i * 30}%`,
                                   left: `${30 + i * 20}%`,
@@ -305,24 +310,38 @@ export default function HeroSection() {
                             ))}
                           </div>
                         </div>
-                        <div className="absolute top-16 left-1/2 transform -translate-x-1/2 w-6 h-6 bg-gradient-to-br from-gray-600 to-gray-700 rounded-full" />
+                        {/* Meter Center */}
+                        <div className="absolute top-16 left-1/2 transform -translate-x-1/2 w-8 h-8 bg-gradient-to-br from-cyan-600 to-blue-700 rounded-full flex items-center justify-center">
+                          <FiSmartphone className="text-white text-xs" />
+                        </div>
                       </div>
-                      <div className="absolute -top-6 -right-6 w-16 h-16 bg-gradient-to-br from-blue-500 to-cyan-500 rounded-full animate-pulse" />
-                      <div className="absolute -bottom-6 -left-6 w-12 h-12 bg-gradient-to-br from-cyan-500 to-blue-500 rounded-full animate-pulse" style={{ animationDelay: '0.5s' }} />
+                      {/* IoT Badge */}
+                      <div className="absolute -top-6 -right-6 w-16 h-16 bg-gradient-to-br from-blue-500 to-cyan-500 rounded-full animate-pulse flex items-center justify-center">
+                        <span className="text-white text-xs font-bold">IoT</span>
+                      </div>
+                      {/* PAYG Badge */}
+                      <div className="absolute -bottom-6 -left-6 w-12 h-12 bg-gradient-to-br from-cyan-500 to-blue-500 rounded-full animate-pulse flex items-center justify-center" style={{ animationDelay: '0.5s' }}>
+                        <FiDollarSign className="text-white text-sm" />
+                      </div>
                     </div>
                   </div>
 
+                  {/* Savings Badge */}
                   <div className="absolute -top-6 -left-6 bg-gradient-to-br from-white/10 to-white/5 backdrop-blur-sm rounded-2xl p-4 border border-white/20 animate-slide-in">
-                    <div className="text-2xl font-bold text-white">-30%</div>
-                    <div className="text-white/70 text-sm">Avg. Savings</div>
+                    <div className="text-2xl font-bold text-white">
+                      <FiTrendingUp className="inline mr-2" />
+                      PAYG
+                    </div>
+                    <div className="text-white/70 text-sm">Micro-Payments</div>
                   </div>
                   
+                  {/* Cost Badge */}
                   <div className="absolute -bottom-6 -right-6 bg-gradient-to-br from-white/10 to-white/5 backdrop-blur-sm rounded-2xl p-4 border border-white/20 animate-slide-in" style={{ animationDelay: '0.3s' }}>
                     <div className="text-2xl font-bold text-white">
-                      <FiClock className="inline mr-2" />
-                      60min
+                      <FiPieChart className="inline mr-2" />
+                      Cost
                     </div>
-                    <div className="text-white/70 text-sm">Emergency</div>
+                    <div className="text-white/70 text-sm">Control</div>
                   </div>
                 </div>
               </div>
