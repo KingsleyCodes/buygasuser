@@ -1,6 +1,7 @@
 import HeroSection from '@/components/HeroSection'
 import FeaturesSection from '@/components/FeaturesSection'
 import ServicesSection from '@/components/ServicesSection'
+import SmartMeterSection from '@/components/SmartMeterSection'
 import WhyChooseUsSection from '@/components/WhyChooseUsSection'
 
 export default function HomePage() {
@@ -14,6 +15,8 @@ export default function HomePage() {
       
       {/* 3. Services Offered - What customers can buy */}
       <ServicesSection />
+
+      <SmartMeterSection/>
       
       {/* 4. Why Choose Us - Differentiation & benefits */}
       <WhyChooseUsSection />
