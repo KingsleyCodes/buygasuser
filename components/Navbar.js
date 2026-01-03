@@ -62,48 +62,43 @@ export default function Navbar() {
       }`}>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           {/* Top Row - All Screen Sizes */}
-          <div className="flex items-center justify-between py-4">
+          <div className="flex items-center justify-between py-3 md:py-4">
             
-            {/* Logo - Responsive with larger size */}
-            <Link href="/" className="flex items-center gap-2 sm:gap-3 group">
+            {/* Logo - Enlarged and Responsive */}
+            <Link href="/" className="flex items-center gap-2 md:gap-3 group flex-shrink-0">
               {/* Logo Container with larger sizes */}
-              <div className="w-12 h-12 sm:w-12 sm:h-12 md:w-18 md:h-18 rounded-lg sm:rounded-xl flex items-center justify-center group-hover:scale-105 transition-transform duration-300 overflow-hidden bg-white">
-                <div className="relative w-8 h-8 sm:w-10 sm:h-10 md:w-14 md:h-14">
-                  <Image
-                    src="/logo.png"
-                    alt="BIIL GAS Logo"
-                    fill
-                    className="object-contain"
-                    sizes="(max-width: 640px) 32px, (max-width: 768px) 40px, 56px"
-                    priority
-                  />
-                </div>
+              <div className="relative w-14 h-14 sm:w-16 sm:h-16 md:w-20 md:h-20 lg:w-22 lg:h-22 flex items-center justify-center group-hover:scale-105 transition-transform duration-300 overflow-hidden">
+                <Image
+                  src="/logo.png"
+                  alt="BIIL GAS Logo"
+                  fill
+                  className="object-contain p-1" // Added padding for breathing space
+                  sizes="(max-width: 640px) 56px, (max-width: 768px) 64px, 80px"
+                  priority
+                />
               </div>
 
-              {/* Logo Text - Hidden on mobile, shown on larger screens */}
+              {/* Logo Text - Responsive visibility */}
               <div className="flex flex-col">
-                {/* Optional: Uncomment if you want text on larger screens */}
-                {/* 
-                <span className="hidden sm:block text-lg sm:text-xl md:text-2xl font-bold bg-gradient-to-r from-blue-700 to-blue-600 bg-clip-text text-transparent tracking-tight">
+                {/* <span className="hidden sm:block text-xl sm:text-2xl md:text-3xl font-bold bg-gradient-to-r from-blue-700 to-blue-600 bg-clip-text text-transparent tracking-tight leading-tight">
                   BIIL GAS
-                </span>
-                */}
-                <span className="hidden sm:block text-[10px] xs:text-xs text-gray-500 -mt-0.5 sm:-mt-1">
+                </span> */}
+                {/* <span className="hidden sm:block text-xs sm:text-sm text-gray-500 mt-0.5 sm:mt-1">
                   Smart Gas Metering
-                </span>
+                </span> */}
               </div>
             </Link>
 
             {/* Desktop Navigation - Center */}
-            <div className="hidden lg:flex items-center justify-center flex-1 mx-8">
+            <div className="hidden lg:flex items-center justify-center flex-1 mx-4 xl:mx-8">
               <div className="flex items-center gap-1">
                 {navLinks.map((link) => (
                   <Link
                     key={link.name}
                     href={link.href}
-                    className="px-5 py-2.5 rounded-lg text-gray-700 hover:text-blue-600 hover:bg-blue-50 font-medium transition-all duration-300 group/link"
+                    className="px-4 xl:px-5 py-2.5 rounded-lg text-gray-700 hover:text-blue-600 hover:bg-blue-50 font-medium transition-all duration-300 group/link relative"
                   >
-                    <span>{link.name}</span>
+                    <span className="text-sm xl:text-base">{link.name}</span>
                     <span className="absolute -bottom-1 left-4 right-4 h-0.5 bg-blue-600 transform scale-x-0 group-hover/link:scale-x-100 transition-transform duration-300"></span>
                   </Link>
                 ))}
@@ -111,13 +106,13 @@ export default function Navbar() {
             </div>
 
             {/* Desktop Right Side - Search & Invest Button */}
-            <div className="hidden lg:flex items-center gap-4">
+            <div className="hidden lg:flex items-center gap-3 xl:gap-4">
               <div className="relative">
                 <FiSearch className="absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-400" />
                 <input
                   type="text"
                   placeholder="Search..."
-                  className="pl-10 pr-4 py-2.5 w-40 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+                  className="pl-10 pr-4 py-2.5 w-40 xl:w-48 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent text-sm"
                 />
               </div>
 
@@ -126,20 +121,20 @@ export default function Navbar() {
                   href="https://buygas-neon.vercel.app/" 
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="px-6 py-3 bg-gradient-to-r from-blue-600 to-blue-700 text-white font-semibold rounded-lg hover:shadow-lg hover:shadow-blue-500/30 transition-all hover:scale-105 min-w-[140px] text-center"
+                  className="px-6 py-3 bg-gradient-to-r from-blue-600 to-blue-700 text-white font-semibold rounded-lg hover:shadow-lg hover:shadow-blue-500/30 transition-all hover:scale-105 min-w-[140px] text-center text-sm xl:text-base"
                 >
                   Invest Now
                 </a>
               </div>
             </div>
 
-            {/* Tablet & Mobile Menu Trigger */}
-            <div className="flex lg:hidden items-center gap-3">
+            {/* Mobile & Tablet Menu Trigger */}
+            <div className="flex lg:hidden items-center gap-2 sm:gap-3">
               <a 
                 href="https://buygas-neon.vercel.app/" 
                 target="_blank"
                 rel="noopener noreferrer"
-                className="px-4 py-2 bg-gradient-to-r from-blue-600 to-blue-700 text-white font-semibold rounded-lg hover:shadow-lg transition-all text-sm min-w-[100px] text-center"
+                className="px-3 sm:px-4 py-2 bg-gradient-to-r from-blue-600 to-blue-700 text-white font-semibold rounded-lg hover:shadow-lg transition-all text-xs sm:text-sm min-w-[90px] sm:min-w-[100px] text-center whitespace-nowrap"
               >
                 Invest Now
               </a>
@@ -149,9 +144,9 @@ export default function Navbar() {
                 aria-label={isMenuOpen ? "Close menu" : "Open menu"}
               >
                 {isMenuOpen ? (
-                  <FiX className="text-2xl text-blue-700" />
+                  <FiX className="text-xl sm:text-2xl text-blue-700" />
                 ) : (
-                  <FiMenu className="text-2xl text-blue-700" />
+                  <FiMenu className="text-xl sm:text-2xl text-blue-700" />
                 )}
               </button>
             </div>
@@ -159,14 +154,20 @@ export default function Navbar() {
 
           {/* Mobile Menu Content */}
           {isMenuOpen && (
-            <div className="lg:hidden border-t border-gray-200 animate-slide-in bg-white">
+            <motion.div 
+              initial={{ opacity: 0, y: -20 }}
+              animate={{ opacity: 1, y: 0 }}
+              exit={{ opacity: 0, y: -20 }}
+              transition={{ duration: 0.2 }}
+              className="lg:hidden border-t border-gray-200 bg-white"
+            >
               <div className="p-4">
                 <div className="relative">
                   <FiSearch className="absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-400" />
                   <input
                     type="text"
                     placeholder="Search services..."
-                    className="w-full pl-10 pr-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+                    className="w-full pl-10 pr-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent text-sm"
                   />
                 </div>
               </div>
@@ -176,7 +177,7 @@ export default function Navbar() {
                   <div key={link.name} className="px-4">
                     <Link
                       href={link.href}
-                      className="block py-4 text-gray-700 hover:text-blue-600 transition-colors font-medium"
+                      className="block py-4 text-gray-700 hover:text-blue-600 transition-colors font-medium text-sm sm:text-base"
                       onClick={() => setIsMenuOpen(false)}
                     >
                       {link.name}
@@ -189,15 +190,15 @@ export default function Navbar() {
                   <a 
                     href="https://buygas-neon.vercel.app/" 
                     target="_blank"
-                    rel="noopener noreferrer"
-                    className="block w-full py-3 bg-gradient-to-r from-blue-600 to-blue-700 text-white font-semibold rounded-lg hover:shadow-lg transition-all text-center"
+                    rel="noopener noreener noreferrer"
+                    className="block w-full py-3 bg-gradient-to-r from-blue-600 to-blue-700 text-white font-semibold rounded-lg hover:shadow-lg transition-all text-center text-sm sm:text-base"
                     onClick={() => setIsMenuOpen(false)}
                   >
                     Invest Now
                   </a>
                 </div>
               </div>
-            </div>
+            </motion.div>
           )}
         </div>
 
