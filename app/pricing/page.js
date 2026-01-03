@@ -582,7 +582,7 @@ export default function PricingPage() {
                   className="px-8 py-4 bg-white text-blue-600 font-bold rounded-xl hover:bg-blue-50 transition-all flex items-center justify-center gap-3"
                 >
                   <FiPhone className="text-xl" />
-                  Call: +234 902 350 5265
+                  Call: +2348169433977
                 </a>
                 <Link
                   href="/investor-deck"

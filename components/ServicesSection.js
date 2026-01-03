@@ -11,7 +11,7 @@ export default function ServicesSection() {
     {
       id: 1,
       icon: <FiDollarSign />,
-      title: "Prepaid PAYG for Households",
+      title: "Prepaid PAYG and Postpaid for Households",
       description: "Micro-payments model overcoming N10,000–N25,000 lump-sum refill costs. Pay per kg used.",
       features: ["Micro-Payments", "Affordable Usage", "Customer-Owned Cylinders"],
       color: "from-blue-500 to-blue-600",
@@ -21,7 +21,7 @@ export default function ServicesSection() {
     {
       id: 2,
       icon: <FiPieChart />,
-      title: "Postpaid for Businesses",
+      title: "Prepaid PAYG and Postpaid for Businesses",
       description: "Smart-as-a-Service for SMEs with consumption tracking and automated supply.",
       features: ["Cost Control", "Automated Supply", "B2B Asset Provision"],
       color: "from-blue-600 to-blue-700",

@@ -48,7 +48,7 @@ export default function Navbar() {
             </div>
             <div className="flex items-center gap-4">
               <span>24/7 Support</span>
-              <a href="tel:+2349023505265" className="font-bold hover:text-blue-100 transition-colors">+234 902 350 5265</a>
+              <a href="tel:+2348169433977" className="font-bold hover:text-blue-100 transition-colors">+2348169433977</a>
             </div>
           </div>
         </div>

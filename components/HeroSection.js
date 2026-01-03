@@ -14,8 +14,8 @@ export default function HeroSection() {
   const slides = [
     {
       id: 1,
-      title: "Never Run Out of Cooking Gas",
-      subtitle: "Pay For What You Use Only",
+      title: "Buy Gas At ₦0",
+      subtitle: "And Pay Small-small",
       description: "Deploying Smart IoT meters with dual-subscription model (Prepaid and Postpaid) for B2B/B2C consumption.",
       image: "/s1.jpg",
       gradient: "from-blue-900/70 via-blue-800/50 to-transparent",
@@ -26,8 +26,8 @@ export default function HeroSection() {
     },
     {
       id: 2,
-      title: "Prepaid PAYG",
-      subtitle: "Overcome Lump-Sum Costs",
+      title: "Only Pay For What You Use",
+      subtitle: "Forget Big Payments",
       description: "Micro-payments model enabling affordable gas usage at N10,000 – N25,000 (12.5kg) refill cost barrier.",
       image: "/s3.jpg",
       gradient: "from-purple-900/70 via-purple-800/50 to-transparent",
@@ -256,7 +256,7 @@ export default function HeroSection() {
                 >
                   <span className="flex items-center justify-center gap-2">
                     <FiPhone className="group-hover:scale-110 transition-transform" />
-                    Support: +234 902 350 5265
+                    Support: +2348169433977
                   </span>
                 </Link>
               </div>
