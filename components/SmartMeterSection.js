@@ -26,8 +26,7 @@ export default function SmartMeterSection() {
                 Smart Dual-Subscription Metering
               </h2>
               <p className="text-gray-600 mb-6">
-                Deploying Smart IoT meters with dual-subscription model (Prepaid for households, 
-                Postpaid for businesses) for efficient LPG consumption tracking.
+                Deploying Smart IoT meters with dual-subscription model (Prepaid and Postpaid for households and businesses) for efficient LPG consumption tracking.
               </p>
             </div>
 

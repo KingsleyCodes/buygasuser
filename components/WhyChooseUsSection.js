@@ -13,7 +13,7 @@ export default function WhyChooseUsSection() {
     {
       icon: <FiDollarSign />,
       title: "Dual Revenue Model",
-      description: "Prepaid PAYG for households and Postpaid Smart-as-a-Service for businesses",
+      description: "Prepaid PAYG or Postpaid Smart-as-a-Service for households and businesses",
       color: "from-blue-600 to-blue-700"
     },
     {
