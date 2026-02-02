@@ -41,7 +41,7 @@ export default function FeaturesSection() {
     {
       icon: <FiDollarSign />,
       title: "Prepaid PAYG",
-      description: "Micro-payments overcoming N10,000-25,000 lump-sum cost barrier",
+      description: "Micro-payments. Only pay for what you use",
       stat: "Affordable"
     },
     {

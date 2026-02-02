@@ -35,7 +35,7 @@ export default function SmartMeterSection() {
                 <FiCheckCircle className="text-green-500 mt-1 flex-shrink-0" />
                 <div>
                   <h4 className="font-semibold text-gray-900">Prepaid PAYG</h4>
-                  <p className="text-sm text-gray-600">Micro-payments per kg used, overcoming N10,000-25,000 lump-sum barrier</p>
+                  <p className="text-sm text-gray-600">Micro-payments. Only pay for what you use</p>
                 </div>
               </div>
               

@@ -11,8 +11,8 @@ export default function ServicesSection() {
     {
       id: 1,
       icon: <FiDollarSign />,
-      title: "Prepaid PAYG and Postpaid for Households",
-      description: "Micro-payments model overcoming N10,000–N25,000 lump-sum refill costs. Pay per kg used.",
+      title: "Prepaid PAYG and Postpaid for Households/Businesses",
+      description: "Micro-payments model overcoming large upfront refill costs. Only pay for what you use",
       features: ["Micro-Payments", "Affordable Usage", "Customer-Owned Cylinders"],
       color: "from-blue-500 to-blue-600",
       cta: "Prepaid Plans",

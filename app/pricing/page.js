@@ -40,7 +40,7 @@ export default function PricingPage() {
       popular: true,
       features: [
         { included: true, text: 'Micro-payments per kg (not per cylinder)' },
-        { included: true, text: 'Overcomes N10,000-25,000 lump-sum barrier' },
+        { included: true, text: 'Overcomes large upfront refil costs' },
         { included: true, text: 'Customer-owned or franchise cylinders' },
         { included: true, text: 'Mobile app for credit loading' },
         { included: true, text: 'Remote valve shut-off at zero balance' },
@@ -159,7 +159,7 @@ export default function PricingPage() {
       type: 'traditional',
       name: 'Traditional Refill',
       cost: '₦25,000',
-      frequency: 'Lump-sum payment',
+      frequency: 'Large upfront refil payment',
       features: ['High upfront cost', 'Risk of running out', 'Manual tracking', 'No consumption data'],
       color: 'from-red-500 to-red-600'
     },
@@ -168,7 +168,7 @@ export default function PricingPage() {
       name: 'IoT Prepaid PAYG',
       cost: '₦1,800/kg',
       frequency: 'Pay per kg used',
-      features: ['Micro-payments', 'No lump-sum burden', 'Real-time tracking', 'Usage insights'],
+      features: ['Micro-payments', 'No large upfront burden', 'Real-time tracking', 'Usage insights'],
       color: 'from-green-500 to-green-600'
     },
     {

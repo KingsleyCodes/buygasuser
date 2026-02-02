@@ -84,8 +84,8 @@ export default function GasUsageSection() {
     },
     {
       icon: <FiDollarSign />,
-      title: "N10K-25K Barrier",
-      description: "Lump-sum refill cost barrier that Prepaid PAYG model addresses",
+      title: "Micro-payments. Only pay for what you use",
+      description: "large upfront refill cost barrier that Prepaid PAYG model addresses",
       color: "from-purple-500 to-pink-500"
     },
     {

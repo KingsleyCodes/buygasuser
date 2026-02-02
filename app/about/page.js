@@ -70,7 +70,7 @@ export default function AboutPage() {
       id: 'affordability',
       title: 'Affordable Access',
       icon: <FiDollarSign />,
-      description: 'Overcoming N10,000-25,000 lump-sum cost barriers with PAYG micro-payments',
+      description: 'Overcoming large upfront refil costs with PAYG micro-payments',
       color: 'bg-green-50 text-green-700'
     },
     {
@@ -116,7 +116,7 @@ export default function AboutPage() {
     {
       name: 'Household User',
       location: 'Lagos',
-      text: 'PAYG model saved us from the N25,000 lump-sum burden. Now we pay only for what we use, per cooking session.',
+      text: 'PAYG model saved us from the large upfront refil burden. Now we pay only for what we use, per cooking session.',
       rating: 5
     },
     {
@@ -293,7 +293,7 @@ export default function AboutPage() {
                             </li>
                             <li className="flex items-center gap-3">
                               <FiCheckCircle className="text-green-500" />
-                              <span>Overcomes N10,000-25,000 lump-sum barrier</span>
+                              <span>Only pay for what you use</span>
                             </li>
                             <li className="flex items-center gap-3">
                               <FiCheckCircle className="text-green-500" />

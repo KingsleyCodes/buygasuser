@@ -49,7 +49,7 @@ export default function WhyChooseUsSection() {
           {/* Left Content */}
           <div>
             <div className="inline-flex items-center gap-2 px-4 py-2 bg-blue-50 text-blue-600 rounded-full font-semibold mb-4">
-              Why Choose BIIL GAS
+              Why Choose BUY GAS
             </div>
             <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 mb-6">
               IoT-Powered LPG
@@ -77,7 +77,7 @@ export default function WhyChooseUsSection() {
                 </div>
                 <div>
                   <h4 className="text-xl font-bold text-gray-900 mb-2">Affordable PAYG Model</h4>
-                  <p className="text-gray-600">Overcoming the N10,000-25,000 lump-sum refill barrier with micro-payments per kg used.</p>
+                  <p className="text-gray-600">Only pay for what you use</p>
                 </div>
               </div>
             </div>
