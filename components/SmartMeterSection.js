@@ -50,7 +50,7 @@ export default function SmartMeterSection() {
 
             <div className="pt-4">
               <a
-                href="https://buygas-neon.vercel.app/"
+                href="https://investor.buygas.ng//"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center gap-2 px-5 py-3 bg-gradient-to-r from-blue-600 to-blue-700 text-white font-semibold rounded-lg hover:shadow-lg transition-all text-sm"

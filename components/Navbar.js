@@ -118,7 +118,7 @@ export default function Navbar() {
 
               <div className="flex items-center gap-3">
                 <a 
-                  href="https://buygas-neon.vercel.app/" 
+                  href="https://investor.buygas.ng//" 
                   target="_blank"
                   rel="noopener noreferrer"
                   className="px-6 py-3 bg-gradient-to-r from-blue-600 to-blue-700 text-white font-semibold rounded-lg hover:shadow-lg hover:shadow-blue-500/30 transition-all hover:scale-105 min-w-[140px] text-center text-sm xl:text-base"
